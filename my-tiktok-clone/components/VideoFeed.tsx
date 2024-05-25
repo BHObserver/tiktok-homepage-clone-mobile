@@ -25,8 +25,9 @@ const VideoFeed: React.FC<VideoFeedProps> = ({ posterSrc, author, stats }) => {
       <Image
           src={posterSrc}
           alt="Video poster"
-          layout="fill"
           objectFit="fill"
+          height={0}
+          width={1000}
         />
       
       <div className="absolute bottom-8 right-0 w-[62px] flex flex-col items-center justify-center space-y-4 z-10">
